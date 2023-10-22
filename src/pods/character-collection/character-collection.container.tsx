@@ -25,6 +25,10 @@ export const CharacterCollectionContainer = () => {
     await deleteCharacter(id);
     loadCharacterCollection();
   };
+  
+  const handleDetails = (id: number) => {
+    navigate(linkRoutes.character(id.toString()));
+  };
 
   return (
     <CharacterCollectionComponent
@@ -32,6 +36,7 @@ export const CharacterCollectionContainer = () => {
       onCreateCharacter={handleCreateCharacter}
       onEdit={handleEdit}
       onDelete={handleDelete}
+      onDetails={handleDetails}
     />
   );
 };
