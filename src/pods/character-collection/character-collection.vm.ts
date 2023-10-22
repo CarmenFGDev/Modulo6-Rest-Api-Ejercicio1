@@ -1,8 +1,7 @@
 export interface CharacterEntityVm {
-  id: string;
-  picture: string;
+  id: number;
+  image: string;
   name: string;
-  description: string;
-  rating: number;
-  address: string;
+  species: string;
+  location: string;
 }
