@@ -22,14 +22,16 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
       validate={formValidation.validateForm}
     >
       {() => (
-        <Form className={classes.root}>
-          <TextFieldComponent name="name" label="Name" />
-          <TextFieldComponent name="species" label="Species" />
-          <TextFieldComponent name="location" label="Location" />
-          <Button type="submit" variant="contained" color="primary">
-            Save
-          </Button>
-        </Form>
+        <div className={classes.root}>
+          <Form className={classes.form}>
+            <TextFieldComponent name="name" label="Name" />
+            <TextFieldComponent name="species" label="Species" />
+            <TextFieldComponent name="status" label="Status" />
+            <Button type="submit" variant="contained" color="primary">
+              Save
+            </Button>
+          </Form>
+        </div>
       )}
     </Formik>
   );

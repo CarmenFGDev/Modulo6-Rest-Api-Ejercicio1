@@ -3,7 +3,7 @@ export interface Character {
   image: string;
   name: string;
   species: string;
-  location: string;
+  status: string;
 }
 
 export const createEmptyCharacter = (): Character => ({
@@ -11,5 +11,5 @@ export const createEmptyCharacter = (): Character => ({
   image: '',
   name: '',
   species:'',
-  location: '',
+  status: '',
 });

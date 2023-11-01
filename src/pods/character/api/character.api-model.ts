@@ -1,37 +1,30 @@
-export interface Character {
-  id: string;
-  type: string;
-  name: string;
-  created: Date;
-  modified: Date;
-  address1: string;
-  airportCode: string;
-  amenityMask: number;
-  city: string;
-  confidenceRating: number;
-  countryCode: string;
-  deepLink: string;
-  highRate: number;
-  hotelId: number;
-  hotelInDestination: boolean;
-  hotelRating: number;
+export interface CharacterCollectionEntityApi {
+   info: {
+    count: number,
+    pages: number,
+    next: string,
+    prev: string
+  },
+  results: Character[]
+}
+
+export interface Character{
+  id: number,
+  name: string,
+  status: string,
+  species: string,
+  type: string,
+  gender: string,
+  origin: {
+  name: string,
+  url:string
+  },
   location: {
-    latitude: number;
-    longitude: number;
-  };
-  locationDescription: string;
-  lowRate: number;
-  metadata: {
-    path: string;
-  };
-  postalCode: number;
-  propertyCategory: number;
-  proximityDistance: number;
-  proximityUnit: string;
-  rateCurrencyCode: string;
-  shortDescription: string;
-  stateProvinceCode: string;
-  thumbNailUrl: string;
-  tripAdvisorRating: number;
-  tripAdvisorRatingUrl: string;
+  name: string,
+  url: string
+  },
+  image: string,
+  episode: string[],
+  url: string,
+  created: Date
 }
