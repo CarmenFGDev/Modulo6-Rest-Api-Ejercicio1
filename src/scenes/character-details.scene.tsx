@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { AppLayout } from 'layouts';
-import { CharacterDetailContainer } from 'pods/character-details/character-details.container';
+import { CharacterDetailsContainer } from 'pods/character-details/character-details.container';
 
 
-export const CharacterCardScene = () => (
+export const CharacterDetailsScene = () => (
   <AppLayout>
-    <CharacterDetailContainer />
+    <CharacterDetailsContainer />
   </AppLayout>
 );
