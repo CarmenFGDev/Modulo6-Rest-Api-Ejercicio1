@@ -18,4 +18,13 @@ export interface CharacterDetails {
   url: string,
   created: Date
 }
+export interface CharacterCollectionEntityApi {
+   info: {
+    count: number,
+    pages: number,
+    next: string,
+    prev: string
+  },
+  results: CharacterDetails[]
+}
 

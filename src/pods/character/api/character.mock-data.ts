@@ -1,4 +1,4 @@
-import { CharacterCollectionEntityApi, Character } from './character.api-model';
+import { CharacterCollectionEntityApi } from './character.api-model';
 
 export const mockCharacterCollection: CharacterCollectionEntityApi= 
 {
